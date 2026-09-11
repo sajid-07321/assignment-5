@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "icon": "react.png",
+    "badge": "Popular",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "icon": "vue.png",
+    "badge": "Versatile",
+    "description": "An approachable, performant, and versatile JavaScript framework for user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "name": "Svelte",
+    "icon": "svelte.png",
+    "badge": "Fast",
+    "description": "A compiler-based approach to building efficient and highly responsive web applications.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "icon": "nextjs.png",
+    "badge": "Popular",
+    "description": "The React framework for full-stack web applications with production-ready features.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "icon": "nodejs.png",
+    "badge": "Standard",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "category": "Backend",
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "icon": "postgresql.png",
+    "badge": "Top SQL",
+    "description": "A powerful open-source object-relational database system with proven reliability.",
+    "category": "Database",
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "name": "Redis",
+    "icon": "redis.png",
+    "badge": "Cache",
+    "description": "An in-memory data structure store used as a database, cache, and message broker.",
+    "category": "Backend",
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "icon": "javascript.png",
+    "badge": "Ubiquitous",
+    "description": "The versatile programming language powering interactive experiences across the web.",
+    "category": "Language",
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "icon": "typescript.png",
+    "badge": "Essential",
+    "description": "A strongly typed programming language built on top of JavaScript for robust applications.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 10,
+    "name": "Java",
+    "icon": "java.png",
+    "badge": "Robust",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.6
+  },
+  {
+    "id": 11,
+    "name": "Tailwind CSS",
+    "icon": "tailwind.png",
+    "badge": "Modern",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build interfaces.",
+    "category": "Styling",
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "icon": "docker.png",
+    "badge": "Container",
+    "description": "A platform designed to build, share, and run applications in isolated environments.",
+    "category": "DevOps",
+    "level": "Intermediate",
+    "rating": 4.9
+  }
+]
