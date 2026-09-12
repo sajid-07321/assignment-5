@@ -8,6 +8,7 @@ import Footer from './component/Footer';
 
 
 
+
 const toolsFetch = async(): Promise<ItoolType[]> => {
   const res = await fetch('/data.json')
   const data = await res.json();

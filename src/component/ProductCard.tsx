@@ -1,4 +1,7 @@
 import React, { use } from "react";
+import AddStack from "./AddStack";
+
+
 
 interface ItoolType {
   id: number;
@@ -105,10 +108,14 @@ const ProductCard = ({ toolsPromise }: ToolProps) => {
 
 </div>
 
-        {/* Stack */}
+        {/* Add Stack */}
 
-        <div className="col-span-1"></div>
-      </div>
+<div className="col-span-1 self-start">
+  <AddStack/>
+</div>
+        
+
+    </div> 
     </section>
   );
 };
