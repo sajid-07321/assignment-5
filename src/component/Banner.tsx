@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <header className='w-full'>
 
-          <div className='max-w-7xl mx-auto px-4 py-20'>
+          <div className='container mx-auto  py-5'>
 
             <div className='flex items-center justify-between'>
                  {/* Left Side */}

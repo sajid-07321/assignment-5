@@ -3,7 +3,10 @@ import Logo from "../assets/logo-text.png";
 
 const Nav = () => {
     return (
-        <nav className='flex justify-between container mx-auto py-5'>
+        <nav className='w-full border-b border-gray-200'>
+
+        <div className="container mx-auto py-5 flex justify-between">
+
           <div>
               <img src={Logo} alt="Logo" />
           </div>
@@ -19,6 +22,7 @@ const Nav = () => {
           <div className="flex gap-4">
             <button>Sign in</button>
             <button className="bg-[#D91B7E] text-white rounded-3xl px-6 py-2">Sing up</button>
+          </div>
           </div>
         </nav>
     );

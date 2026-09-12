@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "React",
-    "icon": "react.png",
+    "icon": "https://images.icon-icons.com/2108/PNG/512/react_icon_130845.png",
     "badge": "Popular",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
     "category": "Frontend",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "name": "Vue.js",
-    "icon": "vue.png",
+    "icon": "https://images.seeklogo.com/logo-png/27/1/vue-js-logo-png_seeklogo-274070.png",
     "badge": "Versatile",
     "description": "An approachable, performant, and versatile JavaScript framework for user interfaces.",
     "category": "Frontend",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "name": "Svelte",
-    "icon": "svelte.png",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVuHWWK9Zijy9DFfuJl5t5AGaQ1xdl9zar1icdYX8L4DtzGLDQufxstMA&s=10",
     "badge": "Fast",
     "description": "A compiler-based approach to building efficient and highly responsive web applications.",
     "category": "Frontend",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "name": "Next.js",
-    "icon": "nextjs.png",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxHo9Sm7V-RdecXZUo-Np6iefqdQo3Dd5EF2zKK7cO27shyIKjFi9QO2I&s=10",
     "badge": "Popular",
     "description": "The React framework for full-stack web applications with production-ready features.",
     "category": "Frontend",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "name": "Node.js",
-    "icon": "nodejs.png",
+    "icon": "https://www.freepnglogos.com/uploads/javascript-png/javascript-nodejs-logo-27.png",
     "badge": "Standard",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
     "category": "Backend",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "name": "PostgreSQL",
-    "icon": "postgresql.png",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJ5POJk0x-JpS68wRxqGPYtqQVmEBDhnv9FENtOzU8Sy_ntLI2LwLK7ft&s=10",
     "badge": "Top SQL",
     "description": "A powerful open-source object-relational database system with proven reliability.",
     "category": "Database",
@@ -62,7 +62,7 @@
   {
     "id": 7,
     "name": "Redis",
-    "icon": "redis.png",
+    "icon": "https://w7.pngwing.com/pngs/282/358/png-transparent-redis-database-erlang-cache-computer-servers-others-angle-logo-microsoft-azure.png",
     "badge": "Cache",
     "description": "An in-memory data structure store used as a database, cache, and message broker.",
     "category": "Backend",
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "name": "JavaScript",
-    "icon": "javascript.png",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
     "badge": "Ubiquitous",
     "description": "The versatile programming language powering interactive experiences across the web.",
     "category": "Language",
@@ -82,7 +82,7 @@
   {
     "id": 9,
     "name": "TypeScript",
-    "icon": "typescript.png",
+    "icon": "https://images.icon-icons.com/2415/PNG/512/typescript_original_logo_icon_146317.png",
     "badge": "Essential",
     "description": "A strongly typed programming language built on top of JavaScript for robust applications.",
     "category": "Language",
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "name": "Java",
-    "icon": "java.png",
+    "icon": "https://images.seeklogo.com/logo-png/15/1/java-logo-png_seeklogo-158094.png",
     "badge": "Robust",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
     "category": "Language",
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "name": "Tailwind CSS",
-    "icon": "tailwind.png",
+    "icon": "https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png",
     "badge": "Modern",
     "description": "A utility-first CSS framework packed with classes that can be composed to build interfaces.",
     "category": "Styling",
@@ -112,7 +112,7 @@
   {
     "id": 12,
     "name": "Docker",
-    "icon": "docker.png",
+    "icon": "https://img.icons8.com/color/1200/docker.jpg",
     "badge": "Container",
     "description": "A platform designed to build, share, and run applications in isolated environments.",
     "category": "DevOps",
