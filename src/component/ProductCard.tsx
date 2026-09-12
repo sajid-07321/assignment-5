@@ -107,7 +107,7 @@ const ProductCard = ({ toolsPromise }: ToolProps) => {
 
         {/* Stack */}
 
-        <div className="col-span-1 bg-amber-400"></div>
+        <div className="col-span-1"></div>
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import Nav from './component/Nav';
 import Banner from './component/Banner';
 import ProductCard from './component/ProductCard';
 import type { ItoolType } from './types/ToolType'
+import Footer from './component/Footer';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Suspense fallback={<h2>Loading.....</h2>}>
         <ProductCard toolsPromise={toolsPromise}/>
         </Suspense>
+        <Footer />
     </>
   )
 }
