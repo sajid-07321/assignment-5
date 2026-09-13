@@ -1,18 +1,7 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import AddStack from "./AddStack";
+import type { ItoolType } from "../types/ToolType";
 
-
-
-interface ItoolType {
-  id: number;
-  name: string;
-  category: string;
-  description: string;
-  icon?: string;
-  rating: number;
-  badge: string;
-  level: string
-}
 
 interface ToolProps {
   toolsPromise: Promise<ItoolType[]>;
@@ -20,6 +9,18 @@ interface ToolProps {
 
 const ProductCard = ({ toolsPromise }: ToolProps) => {
   const tools = use(toolsPromise);
+
+  const [selectedTools, setSelectedTools] = useState<ItoolType[]>([]);
+
+  const handleAddStack = (tool: ItoolType) => {
+    setSelectedTools((previousTool) => {
+      if (previousTool.some((selectedTool) => selectedTool.id === tool.id)) {
+        return previousTool;
+      }
+
+      return [...previousTool, tool];
+    });
+  };
 
   return (
     <section className="container mx-auto py-5">
@@ -96,7 +97,9 @@ const ProductCard = ({ toolsPromise }: ToolProps) => {
         </div>
 
         {/* Button */}
-        <button className="w-full bg-[#0F172A] text-white py-2 rounded-lg text-sm mt-auto">
+        <button 
+        onClick={() => handleAddStack(tool)}
+        className="w-full bg-[#0F172A] text-white py-2 rounded-lg text-sm mt-auto">
           Add to Stack
         </button>
 
@@ -110,8 +113,11 @@ const ProductCard = ({ toolsPromise }: ToolProps) => {
 
         {/* Add Stack */}
 
-<div className="col-span-1 self-start">
-  <AddStack/>
+<div className="col-span-1">
+  <AddStack
+    selectedTools={selectedTools}
+    setSelectedTools={setSelectedTools}
+  />
 </div>
         
 
