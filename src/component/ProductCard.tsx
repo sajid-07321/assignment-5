@@ -1,7 +1,7 @@
 import React, { use, useState } from "react";
 import AddStack from "./AddStack";
 import type { ItoolType } from "../types/ToolType";
-
+import { Bounce, toast } from "react-toastify";
 
 interface ToolProps {
   toolsPromise: Promise<ItoolType[]>;
@@ -17,8 +17,19 @@ const ProductCard = ({ toolsPromise }: ToolProps) => {
       if (previousTool.some((selectedTool) => selectedTool.id === tool.id)) {
         return previousTool;
       }
-
       return [...previousTool, tool];
+    });
+
+    toast.success(`${tool.name} added to your stack`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
     });
   };
 
@@ -43,85 +54,77 @@ const ProductCard = ({ toolsPromise }: ToolProps) => {
       <div className="grid grid-cols-4 gap-4 mt-6">
         {/* Technology Card */}
 
-      <div className="col-span-3 grid grid-cols-3 gap-4">
-   
-      {tools.map((tool) => {
-  return (
-    <div
-      key={tool.id}
-      className="card bg-base-100 border border-gray-200 shadow-sm h-full"
-    >
+        <div className="col-span-3 grid grid-cols-3 gap-4">
+          {tools.map((tool) => {
+            const isSelected = selectedTools.some(
+              (selectedTool) => selectedTool.id === tool.id,
+            );
 
-      <div className="card-body flex flex-col">
+            return (
+              <div
+                key={tool.id}
+                className="card bg-base-100 border border-gray-200 shadow-sm h-full"
+              >
+                <div className="card-body flex flex-col">
+                  {/* Icon + Badge */}
+                  <div className="flex items-center justify-between">
+                    <img
+                      src={tool.icon}
+                      alt={tool.name}
+                      className="w-10 h-10 object-contain"
+                    />
 
-        {/* Icon + Badge */}
-        <div className="flex items-center justify-between">
+                    <span className="text-xs px-3 py-1 rounded-full bg-green-50 text-green-600">
+                      {tool.badge}
+                    </span>
+                  </div>
 
-          <img
-            src={tool.icon}
-            alt={tool.name}
-            className="w-10 h-10 object-contain"
-          />
+                  {/* Name */}
+                  <h2 className="card-title text-lg font-semibold">
+                    {tool.name}
+                  </h2>
 
-          <span className="text-xs px-3 py-1 rounded-full bg-green-50 text-green-600">
-            {tool.badge}
-          </span>
+                  {/* Description */}
+                  <p className="text-sm text-[#64748B]">{tool.description}</p>
 
+                  {/* Category + Level + Rating */}
+                  <div className="flex items-center justify-between text-xs mt-4">
+                    <span className="bg-gray-100 px-2 py-1 rounded">
+                      {tool.category}
+                    </span>
+
+                    <span className="text-[#64748B]">{tool.level}</span>
+
+                    <span>⭐ {tool.rating}</span>
+                  </div>
+
+                  {/* Button */}
+                  <button
+                    disabled={isSelected}
+                    onClick={() => handleAddStack(tool)}
+                    className={`w-full py-2 rounded-lg ${
+                      isSelected
+                        ? "bg-gray-200 text-white"
+                        : "bg-[#0F172A] text-white"
+                    }`}
+                  >
+                    {isSelected ? "Added to Stack" : "Add to Stack"}
+                  </button>
+                </div>
+              </div>
+            );
+          })}
         </div>
-
-        {/* Name */}
-        <h2 className="card-title text-lg font-semibold">
-          {tool.name}
-        </h2>
-
-        {/* Description */}
-        <p className="text-sm text-[#64748B]">
-          {tool.description}
-        </p>
-
-        {/* Category + Level + Rating */}
-        <div className="flex items-center justify-between text-xs mt-4">
-
-          <span className="bg-gray-100 px-2 py-1 rounded">
-            {tool.category}
-          </span>
-
-          <span className="text-[#64748B]">
-            {tool.level}
-          </span>
-
-          <span>
-            ⭐ {tool.rating}
-          </span>
-
-        </div>
-
-        {/* Button */}
-        <button 
-        onClick={() => handleAddStack(tool)}
-        className="w-full bg-[#0F172A] text-white py-2 rounded-lg text-sm mt-auto">
-          Add to Stack
-        </button>
-
-      </div>
-
-    </div>
-  );
-})}
-
-</div>
 
         {/* Add Stack */}
 
-<div className="col-span-1">
-  <AddStack
-    selectedTools={selectedTools}
-    setSelectedTools={setSelectedTools}
-  />
-</div>
-        
-
-    </div> 
+        <div className="col-span-1">
+          <AddStack
+            selectedTools={selectedTools}
+            setSelectedTools={setSelectedTools}
+          />
+        </div>
+      </div>
     </section>
   );
 };
